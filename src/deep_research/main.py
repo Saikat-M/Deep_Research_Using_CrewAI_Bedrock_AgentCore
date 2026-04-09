@@ -34,7 +34,6 @@ def train():
     """
     inputs = {
         "user_query": "Gemini 3",
-        # 'current_year': str(datetime.now().year)
     }
     try:
         DeepResearch().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)

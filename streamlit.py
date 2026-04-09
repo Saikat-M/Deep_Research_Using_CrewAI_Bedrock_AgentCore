@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import requests
-# from datetime import datetime
 import time
 import json
 from src.deep_research.crew import DeepResearch
@@ -79,7 +78,7 @@ with col2:
             use_container_width=True
         )
 
-API_URL = "https://ncez2dc06j.execute-api.us-east-1.amazonaws.com/dev/deep_research"
+API_URL = "API_INVOKE_URL"
 
 # ----------------------------------------
 # Run Research (ONLY when submitted)
