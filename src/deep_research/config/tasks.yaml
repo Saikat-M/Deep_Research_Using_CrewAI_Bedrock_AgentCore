@@ -1,0 +1,61 @@
+# research_task:
+#   description: >
+#     Conduct a thorough research about {topic}
+#     Make sure you find any interesting and relevant information given
+#     the current year is {current_year}.
+#   expected_output: >
+#     A list with 10 bullet points of the most relevant information about {topic}
+#   agent: researcher
+
+# reporting_task:
+#   description: >
+#     Review the context you got and expand each topic into a full section for a report.
+#     Make sure the report is detailed and contains any and all relevant information.
+#   expected_output: >
+#     A fully fledged report with the main topics, each with a full section of information.
+#     Formatted as markdown without '```'
+#   agent: reporting_analyst
+
+# define the create research plan task
+create_research_plan_task: 
+  description: >
+    Based on the user's query, break it down into specific topics and key questions, 
+    and create a focused research plan.
+    The user's query is: {user_query}
+  expected_output: > 
+    A research plan with main research topics to investigate, 
+    key questions for each topic, and success criteria for the research.
+  agent: research_planner
+
+# define the gather research data task
+gather_research_data_task:
+  description: >
+    Using the research plan, collect information on all identified topics. 
+    Cite all sources used.
+  expected_output: >
+    Comprehensive research data including: information for each
+    research topic, and citations used along with source credibility notes
+  agent: researcher
+
+#define the verify information quality task
+verify_information_quality_task: 
+    description: >
+      Review all collected research. Identify any conflicting information, 
+      potential misinformation, or gaps that need addressing.
+    expected_output: > 
+      A report with all the original data you got plus any 
+      verified facts vs. questionable information, make sure this is as comprehensive 
+      as possible for final report generation
+    agent: fact_checker
+
+# define the write final report task
+write_final_report_task:
+    description: >
+      Create a comprehensive report that answers the original query using all verified research data. 
+      Structure it with clear sections, include citations, and provide actionable insights.
+    expected_output: >
+      A final research report containing: executive summary, detailed 
+      findings that answer the user query, supporting evidence and analysis, complete 
+      source citations.
+    agent: report_writer
+

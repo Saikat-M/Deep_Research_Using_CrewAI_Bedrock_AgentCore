@@ -1,0 +1,5 @@
+bedrock-agentcore==0.1.4
+boto3==1.40.35
+crewai[tools] == 0.193.2
+streamlit==1.49.1
+exa-py

@@ -1,0 +1,30 @@
+# --- Environments ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Sensitive Data (Crucial!) ---
+.env
+
+# --- Python internals ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- Tool Specific ---
+.amazonq/
+.vscode/
+.idea/
+
+# --- Project Specific Outputs ---
+# Exclude generated reports and temporary logs
+*.md
+!README.md
+Amazon_job_msic.txt
+Command&Output.txt
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
