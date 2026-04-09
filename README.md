@@ -63,7 +63,7 @@ Activate the virtual environment:
 
 Install all project dependencies (required for both running the Streamlit frontend locally and building the Docker image):
 
-Using `uv sync` (recommended — installs from `pyproject.toml`):
+Using `uv sync` (recommended — installs exact versions from uv.lock):
 ```bash
 uv sync
 ```
