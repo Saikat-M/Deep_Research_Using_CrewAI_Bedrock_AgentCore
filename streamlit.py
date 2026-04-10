@@ -47,7 +47,7 @@ st.markdown("""
 # ----------------------------------------
 # Header
 # ----------------------------------------
-st.markdown('<h1 class="main-header">📚 Deep Research Agent Using CrewAI and AgentCore</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">📚 Deep Research Using CrewAI and AgentCore</h1>', unsafe_allow_html=True)
 st.markdown(
     '<p class="subtitle">Conduct structured, multi-step deep research and generate high-quality reports</p>',
     unsafe_allow_html=True
